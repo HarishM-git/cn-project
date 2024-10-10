@@ -52,7 +52,7 @@ def send_usage_data(cpu_usage, memory_usage, top_cpu_processes, top_memory_proce
     hostname = socket.gethostname() 
     ip_address = socket.gethostbyname(hostname) 
     
-    data = {
+    data = {     
         'hostname': hostname,
         'ip_address': ip_address,
         'cpu_usage': cpu_usage,
