@@ -60,6 +60,7 @@ def send_usage_data(cpu_usage, memory_usage, top_cpu_processes, top_memory_proce
         'top_cpu_processes': top_cpu_processes,
         'top_memory_processes': top_memory_processes
     }
+    
     print('Data:', data)
 
     try:
