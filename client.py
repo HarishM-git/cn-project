@@ -66,6 +66,7 @@ def send_usage_data(cpu_usage, memory_usage, top_cpu_processes, top_memory_proce
     try:
         response = requests.post(url, json=data)
         response.raise_for_status()
+        
         print('Data sent successfully:', response)
     except requests.RequestException as e:
         print(f"Failed to send data: {e}")

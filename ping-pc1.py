@@ -12,7 +12,6 @@ for _ in range(10):
     print(f"Pinging 192.168.0.210...")
     process = ping('192.168.23.1')
     
-    # Read the output line by line
     for line in process.stdout:
         print(line.strip())  # Print each line of output
     
