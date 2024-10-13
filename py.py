@@ -11,7 +11,8 @@ def check_vpcs_usage():
             print(f"VPCS Process: CPU: {cpu_usage}%, Memory: {memory_usage / 1024 / 1024}MB")
             if cpu_usage >= CPU_THRESHOLD or memory_usage >= MEMORY_THRESHOLD:
                 print("\t\t\t\t\tAlert: High CPU or Memory usage detected!")
-
+                
+ 
 while True:
     check_vpcs_usage()
-    time.sleep(5)  
+    time.sleep(5)   

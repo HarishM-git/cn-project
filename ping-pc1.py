@@ -7,7 +7,7 @@ def ping(address):
     process = subprocess.Popen(['ping', address], stdout=subprocess.PIPE, stderr=subprocess.PIPE, text=True)
     return process
 
-# Ping 192.168.0.210 10 times
+# Ping 192.168.
 for _ in range(10):
     print(f"Pinging 192.168.0.210...")
     process = ping('192.168.23.1')
