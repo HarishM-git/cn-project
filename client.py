@@ -31,6 +31,7 @@ def get_system_usage():
     top_memory_processes = []
     for proc in psutil.process_iter(['name', 'memory_percent']):
         try:
+            
             proc_memory_percent = proc.info['memory_percent']
             top_memory_processes.append({
                 'name': proc.info['name'],
@@ -80,3 +81,4 @@ def main():
 
 if __name__ == "__main__":
     main()
+ 

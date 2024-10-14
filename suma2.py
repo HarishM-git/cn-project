@@ -4,7 +4,7 @@ for _ in range(int(input())):
     d=s
     count=0
     if len(s)!=n:
-        print("not a valid inp")
+        print("it's not a ")
     
     else:
         ss=max(set(s), key=s.count)
