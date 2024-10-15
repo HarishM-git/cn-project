@@ -28,7 +28,9 @@ def get_system_usage():
     
     memory_usage = psutil.virtual_memory().percent
 
+
     top_memory_processes = []
+    
     for proc in psutil.process_iter(['name', 'memory_percent']):
         try:
             
