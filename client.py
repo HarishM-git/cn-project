@@ -20,7 +20,9 @@ def get_system_usage():
                 })
                 total_cpu_from_processes += proc_cpu_percent
         except (psutil.NoSuchProcess, psutil.AccessDenied, psutil.ZombieProcess):
+
             continue
+        
 
     top_cpu_processes = sorted(top_cpu_processes, key=lambda x: x['cpu_percent'], reverse=True)[:5]
 
@@ -42,7 +44,7 @@ def get_system_usage():
         except (psutil.NoSuchProcess, psutil.AccessDenied, psutil.ZombieProcess):
             continue
 
-    top_memory_processes = sorted(top_memory_processes, key=lambda x: x['memory_percent'], reverse=True)[:5]
+        top_memory_processes = sorted(top_memory_processes, key=lambda x: x['memory_percent'], reverse=True)[:5]
 
     return round(total_cpu_percentage, 3), memory_usage, top_cpu_processes, top_memory_processes
 
