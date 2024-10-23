@@ -10,7 +10,6 @@ memory_threshold = 50
 @app.route('/', methods=['GET'])
 def hello():
     return "Hello, Flask server is running!"
-
 @app.route('/usage', methods=['POST'])
 def update_usage():
     data = request.get_json()
