@@ -5,6 +5,7 @@ import pyautogui as pag
 app = Flask(__name__)
 
 cpu_threshold = 10
+
 memory_threshold = 50
 
 @app.route('/', methods=['GET'])
