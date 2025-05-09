@@ -52,7 +52,7 @@ def send_usage_data(cpu_usage, memory_usage, top_cpu_processes, top_memory_proce
     """
     Send the system usage data to a specified server endpoint.
     """
-    url = 'http://192.168.0.155:5500/usage'
+    url = 'http://127.0.0.1:5500/usage'
     
     hostname = socket.gethostname() 
     ip_address = socket.gethostbyname(hostname) 
